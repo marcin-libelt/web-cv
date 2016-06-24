@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <link type="text/css" rel="stylesheet" media="all" href="css/app.css"/>
+</head>
+<body>
+
+<input type="checkbox" class="show-more" id="show-more-switcher">
+<label for="show-more-switcher">Show all comments</label>
+
+<section id="gallery">
+    <div class="viewport">
+        <ul>
+            <li><img src="" style="width: 500px; height: 400px; background: red; display:block" alt=""></li>
+            <li><img src="" style="width: 500px; height: 400px; background: green; display:block" alt=""></li>
+            <li><img src="" style="width: 500px; height: 400px; background: yellow; display:block" alt=""></li>
+            <li><img src="" style="width: 500px; height: 400px; background: deeppink; display:block" alt=""></li>
+            <li><img src="" style="width: 500px; height: 400px; background: violet; display:block" alt=""></li>
+            <li><img src="" style="width: 500px; height: 400px; background: blue; display:block" alt=""></li>
+            <li><img src="" style="width: 500px; height: 400px; background: black; display:block" alt=""></li>
+            <li><img src="" style="width: 500px; height: 400px; background: darkblue; display:block" alt=""></li>
+            <li><img src="" style="width: 500px; height: 400px; background: yellowgreen; display:block" alt=""></li>
+            <li><img src="" style="width: 500px; height: 400px; background: white; display:block" alt=""></li>
+        </ul>
+    </div>
+
+</section>
+
+
+<section class="accordion">
+
+
+
+    <input type="radio" name="xxx" id="xxx1">
+    <label for="xxx1">header 1</label>
+    <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi fugit hic in laboriosam pariatur quam qui quis quisquam voluptate voluptatem. Accusamus cum fugit in nemo repellat rerum soluta tempora voluptatibus!</p>
+    </div>
+
+
+    <input type="radio" name="xxx" id="xxx2">
+    <label for="xxx2">header 2</label>
+    <div class="content">
+        <p>2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi fugit hic in laboriosam pariatur quam qui quis quisquam voluptate voluptatem. Accusamus cum fugit in nemo repellat rerum soluta tempora voluptatibus!</p>
+    </div>
+
+
+    <input type="radio" name="xxx" id="xxx3">
+    <label for="xxx3">header 3</label>
+    <div class="content">
+        <p>3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi fugit hic in laboriosam pariatur quam qui quis quisquam voluptate voluptatem. Accusamus cum fugit in nemo repellat rerum soluta tempora voluptatibus!</p>
+    </div>
+
+</section>
+
+<section style="display: none">
+    <div class="row">
+
+        <h1>Marcin Libelt <small>- front end developer</small></h1>
+
+        <p>
+            <q>It's not about lines of code you can write, it's about lines of code you can delete</q>
+        </p>
+
+        <p>
+            fdfds
+        </p>
+
+        <dl>
+            <dt>Experience</dt>
+            <dd>
+                <ul>
+                    <li><strong>Alekseon</strong> Sp. z o.o.</li>
+                    <li><strong>Baobaz Polska</strong> Sp. z o.o.</li>
+                    <li></li>
+                </ul>
+            </dd>
+
+            <dt>Educations</dt>
+            <dd>
+                <ul>
+                    <li></li>
+                </ul>
+            </dd>
+
+
+            <dt>Technology</dt>
+            <dd>
+                <ul>
+                    <li>Vanilla Js</li>
+                    <li>jQuery</li>
+                    <li>prototype js <span class="more">because of Magento</span></li>
+                    <li>Angular 2 <span class="more">in theory, but I am seeking for oportunities</span></li>
+                    <li>Ajax, HTTP requests</li>
+                    <li>PHP <span class="more">general basics</span></li>
+                    <li>Sass <span class="more">it's cool and easy - but css was my first <i class="fa fa-love"></i></span></li>
+                </ul>
+            </dd>
+            <dt>Envrionment</dt>
+            <dd>
+                <ul>
+                    <li>Windows - mostly because of Photoshop</li>
+                    <li>Linux - to make life easier</li>
+                </ul>
+            </dd>
+        </dl>
+
+
+        <div style="">
+            Usually, we don’t want to care about the mouse moving to child elements.
+            All we want is to know when the mouse enters the element and when it leaves.
+
+            There are mouseenter and mouseleave events to handle this, described in DOM Level 3 specification and supported by IE.
+
+            For the rest of the browsers, we need to filter out mouseouts to children. The standard trick is to check the relatedTarget, and do nothing if we are still inside the parent.
+
+            In the example below, we use mouseout for all browsers, but filter it through isOutside which ascends through parents of relatedTarget until it either meets the parent (this means we’re inside) or reaches the top node (we’re outside).
+            Usually, we don’t want to care about the mouse moving to child elements.
+            All we want is to know when the mouse enters the element and when it leaves.
+
+            There are mouseenter and mouseleave events to handle this, described in DOM Level 3 specification and supported by IE.
+
+            For the rest of the browsers, we need to filter out mouseouts to children. The standard trick is to check the relatedTarget, and do nothing if we are still inside the parent.
+
+            In the example below, we use mouseout for all browsers, but filter it through isOutside which ascends through parents of relatedTarget until it either meets the parent (this means we’re inside) or reaches the top node (we’re outside).
+            Usually, we don’t want to care about the mouse moving to child elements.
+            All we want is to know when the mouse enters the element and when it leaves.
+
+            There are mouseenter and mouseleave events to handle this, described in DOM Level 3 specification and supported by IE.
+
+            For the rest of the browsers, we need to filter out mouseouts to children. The standard trick is to check the relatedTarget, and do nothing if we are still inside the parent.
+
+            In the example below, we use mouseout for all browsers, but filter it through isOutside which ascends through parents of relatedTarget until it either meets the parent (this means we’re inside) or reaches the top node (we’re outside).
+            <span class="hollow-mask"></span>
+        </div>
+
+
+    </div>
+</section>
+
+
+
+<script src="js/main.js" type="text/javascript"></script>
+
+
+
+</body>
+</html>

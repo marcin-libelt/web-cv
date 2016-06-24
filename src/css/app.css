@@ -3616,3 +3616,25 @@ input[type="checkbox"]:checked + label + section .more {
 .accordion input:checked + label + .content {
   max-height: 200px;
 }
+
+/* line 1, ../scss/_dorotas.scss */
+#gallery {
+  cursor: e-resize;
+}
+/* line 5, ../scss/_dorotas.scss */
+#gallery .viewport {
+  width: 500px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+/* line 11, ../scss/_dorotas.scss */
+#gallery ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 5000px;
+}
+/* line 17, ../scss/_dorotas.scss */
+#gallery ul li {
+  float: left;
+}
