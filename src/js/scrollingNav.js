@@ -16,6 +16,7 @@ function ScrollingNav(config) {
 
     this.highlightOne(0);
 
+    this.navigation.addEventListener('click', this.scrollToPosition.bind(this));
     window.addEventListener('scroll', this.onScroll.bind(this));
     window.addEventListener('resize', this.calculateMap.bind(this));
 
@@ -37,6 +38,10 @@ ScrollingNav.prototype = {
         }
     },
 
+    onClick : function() {
+
+    },
+
     calculateMap : function() {
         var i;
         this.anchorsMap = [];
@@ -56,6 +61,36 @@ ScrollingNav.prototype = {
 
         // set current
         this.navItems[index].className = this.navItems[index].className + this.cls;
+    },
+
+    scrollToPosition : function(e) {
+
+        if(this.config.animate !== true) {
+            return true;
+        }
+
+        console.log(this.navItems)
+
+        var target = e.target || e.srcElement;
+        var event = e || window.event;
+
+        event.preventDefault();
+
+        var pos = 0;
+
+        this.highlightOne(2);
+
+
+
+        var interval = setInterval(function() {
+            if (pos == 300) {
+                clearInterval(interval);
+            } else {
+                pos++;
+                window.scrollTo(0, pos);
+            }
+        }, 5);
+
     }
 
 };
@@ -64,6 +99,7 @@ ScrollingNav.prototype = {
 
 var scrollingNav = new ScrollingNav({
     navigation: 'ul.nav',
-    className: 'highlighted'
+    className: 'highlighted',
+    animate: false
 })
 
